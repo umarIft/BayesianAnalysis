@@ -23,10 +23,10 @@ In order to avoid issues of multicollinearity in our model, we only select one s
 | Abstraction        | DAM, MOA, MFA                 |
 | Inheritance        | DIT, NOC                      |
 
-Later, we also discuss our choice of selecting a source code metric that corresponds to the internal attributes of interest.
+Later, we also discuss our choice of selecting a source code metric that corresponds to the internal attributes of interest. The different models created select a single source code metric for each internal attribute.
 
 ## Selecting priors
-
+Since 
 
 
 
