@@ -12,7 +12,18 @@ The directed acyclic graph, DAG, is depicted in the following figure. According 
 </p>
 
 ## Selecting source code metrics
-In order to avoid issues of multicollinearity in our model, we only select one static source code metric to represent individual internal attribute considered. Later, we also discuss our choice of selecting a source code metric that corresponds to the internal attributes of interest.
+In order to avoid issues of multicollinearity in our model, we only select one static source code metric to represent individual internal attribute considered. The following set of source code metrics have been extracted in the dataset considered. 
+
+| Internal attribute | Extracted metrics |
+|--------------------|-------------------|
+| Complexity         |                   | 
+| Coupling           |                   |
+| Cohesion           |                   |
+| Size               |                   |
+| Abstraction        |                   |
+| Inheritance        |                   |
+
+Later, we also discuss our choice of selecting a source code metric that corresponds to the internal attributes of interest.
 
 ## Selecting priors
 
