@@ -14,14 +14,14 @@ The directed acyclic graph, DAG, is depicted in the following figure. According 
 ## Selecting source code metrics
 In order to avoid issues of multicollinearity in our model, we only select one static source code metric to represent individual internal attribute considered. The following set of source code metrics have been extracted in the dataset considered. 
 
-| Internal attribute | Extracted metrics |
-|--------------------|-------------------|
-| Complexity         |                   | 
-| Coupling           |                   |
-| Cohesion           |                   |
-| Size               |                   |
-| Abstraction        |                   |
-| Inheritance        |                   |
+| Internal attribute | Extracted metrics             |
+|--------------------|-------------------------------|
+| Complexity         | WMC, RFC, AMC, MAX-CC, AVG-CC | 
+| Coupling           | CBO, CA, CE, IC               |
+| Cohesion           | LCOM, LCOM3, CAM, CBM         |
+| Size               | NPM, LOC,                     |
+| Abstraction        | DAM, MOA, MFA                 |
+| Inheritance        | DIT, NOC                      |
 
 Later, we also discuss our choice of selecting a source code metric that corresponds to the internal attributes of interest.
 
