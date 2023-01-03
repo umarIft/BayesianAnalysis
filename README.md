@@ -5,7 +5,8 @@ Internal attributes of software include complexity, coupling, cohesion, size, le
 Internal attributes of software are often measured using object oriented source code metrics proposed by Chidamber and Kemerer, Mccabe etc. Goel et al.[1] give an overview on these source code metrics. We utilise the dataset made available [here](https://figshare.com/articles/dataset/Software_Defect_Prediction_Dataset/13536506) which reports 20 source code metrics along with the number of bugs found for several open source systems.
 
 In order to avoid issues of multicollinearity in our model, we only select one static source code metric for each individual internal attribute considered.
-The directed acyclic graph, DAG, is depicted in the following figure. 
+The directed acyclic graph, DAG, is depicted in the following figure. Later, we also discuss our choice of selecting a source code metric that corresponds to the internal attributes of interest.
+
 <p align="center">
   <img src="Images/DAGv1.png" width=50% height=50% title="DAG: internal attributes software bugs">
 </p>
