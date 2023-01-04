@@ -1,4 +1,5 @@
-# BayesianAnalysis
+# Bayesian analysis of software bugs using source code metrics
+
 ## Background
 Internal attributes of software include complexity, coupling, cohesion, size, level of inheritance and level of abstraction in the source code. In this project, we use bayesian data analysis to analyse the relationship between software bugs in the software and internal attributes of software. In this regard, we consider the above mentioned six internal attributes in order to develop a bayesian model that explains their relationship with software bugs.
 
