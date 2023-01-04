@@ -26,11 +26,16 @@ In order to avoid issues of multicollinearity in our model, we only select one s
 Later, we also discuss our choice of selecting a source code metric that corresponds to the internal attributes of interest. The different models created select a single source code metric for each internal attribute.
 
 ## Selecting priors
-Since the source code metrics can only take positive values for a given software module, we chose log-normal as the distribution for the priors of the source code metrics.
+Since the source code metrics can only take positive values for a given software module, we chose log-normal as the distribution for the priors of the source code metrics. We also assumed a linear relationship between the source code metrics and number of bugs. The different combinations of source code metrics that were used to describe the models are provided in the table below. 
+| Model Name | Source code metrics used       |
+|------------|--------------------------------|
+| m1         | WMC, LOC, LCOM3, CBO, DIT, DAM |
+| m2         | AMC, NPM, CAM, CA, MOA, NOC    |
+| m3         | RFC, LOC, CBO, LCOM3           |
+| m5         | WMC, CE, LCOM3, LOC            |
+| m6         | RFC, LOC, CBO, LCOM3           |
 
-
-
-
+Our initial attempt at 
 
 
 
