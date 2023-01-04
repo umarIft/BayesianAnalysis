@@ -8,7 +8,7 @@ Internal attributes of software are often measured using object oriented source 
 The directed acyclic graph, DAG, is depicted in the following figure. According to the static source code measurement theory, internal attributes do not influence each other. This may be better illustrated with an example. A piece of code which may be highly complex but has low coupling with other pieces of code. Also, small lenght of source code can also be complex depending on the kind of functionality implemented while very long length of source code may contain less complexity. The bugs introduced due to carelessness or lack of knowledge of the developer are not considered and is an unobserved variable in our analysis.     
 
 <p align="center">
-  <img src="Images/DAGv1.png" width=50% height=50% title="DAG: internal attributes software bugs">
+  <img src="Images/DAGv1.png" width=40% height=40% title="DAG: internal attributes software bugs">
 </p>
 
 ## Selecting source code metrics
@@ -27,16 +27,21 @@ Later, we also discuss our choice of selecting a source code metric that corresp
 
 ## Selecting priors
 Since the source code metrics can only take positive values for a given software module, we chose log-normal as the distribution for the priors of the source code metrics. We also assumed a linear relationship between the source code metrics and number of bugs. The different combinations of source code metrics that were used to describe the models are provided in the table below. 
-| Model Name | Source code metrics used       |
-|------------|--------------------------------|
-| m1         | WMC, LOC, LCOM3, CBO, DIT, DAM |
-| m2         | AMC, NPM, CAM, CA, MOA, NOC    |
-| m3         | RFC, LOC, CBO, LCOM3           |
-| m5         | WMC, CE, LCOM3, LOC            |
-| m6         | RFC, LOC, CBO, LCOM3           |
 
-Our initial attempt at 
+| Model Name | Source code metrics used       | Approximation method    | 
+|------------|--------------------------------|-------------------------|
+| m1draft    | WMC, LOC, LCOM3, CBO, DIT, DAM | Quadratic approximation |
+| m1         | WMC, LOC, LCOM3, CBO, DIT, DAM | Quadratic approximation |
+| m2         | AMC, NPM, CAM, CA, MOA, NOC    | Quadratic approximation |
+| m3         | RFC, LOC, CBO, LCOM3           | Quadratic approximation |
+| m5         | WMC, CE, LCOM3, LOC            | Quadratic approximation |
+| m6         | RFC, LOC, CBO, LCOM3           | Hamiltonian Monte Carlo |
+| m7         | RFC, LOC, CBO, LCOM3           | Hamiltonian Monte Carlo |
 
+After extracting data from the stored file, we remove any rows with incomplete data and then we standardised all the source code metrics. Next, we set out to find reasonable priors for our first model. In **m1draft**, we chose broad priors and then plot the priors to observe their behaviour. The priors for **m1draft** are show below. (The attached R code can be used to reproduce all the figures shown.)   
+
+
+Next, we incrementatlly reduced the standard deviation that leads to **m1** model. Extracting and plotting the priors from **m1** gives the following output, which is in a much narrower range and can be used for the approximation. The same priors were then selected for the all the models.
 
 
 
