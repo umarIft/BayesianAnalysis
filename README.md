@@ -30,9 +30,10 @@ Since the source code metrics can only take positive values for a given software
 
 | Model Name | Source code metrics used       | Approximation method    | 
 |------------|--------------------------------|-------------------------|
-| m1draft    | WMC, LOC, LCOM3, CBO, DIT, DAM | Quadratic approximation |
-| m1         | WMC, LOC, LCOM3, CBO, DIT, DAM | Quadratic approximation |
-| m2         | AMC, NPM, CAM, CA, MOA, NOC    | Quadratic approximation |
+| m0draft    | WMC, LOC, LCOM3, CBO, DIT, DAM | Quadratic approximation |
+| m0         | WMC, LOC, LCOM3, CBO, DIT, DAM | Quadratic approximation |
+| m1         | AMC, NPM, CAM, CA, MOA, NOC    | Quadratic approximation |
+| m2         | AVGCC, LOC, CBM, CE, DIT, MOA  | Quadratic approximation | 
 | m3         | RFC, LOC, CBO, LCOM3           | Quadratic approximation |
 | m5         | WMC, CE, LCOM3, LOC            | Quadratic approximation |
 | m6         | RFC, LOC, CBO, LCOM3           | Hamiltonian Monte Carlo |
