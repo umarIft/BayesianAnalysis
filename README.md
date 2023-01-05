@@ -37,11 +37,11 @@ The model created select a single source code metric for each internal attribute
 Since software bugs can take on positive values and the upper bound of the present software bugs in a module is unknown, We assume counting of software bugs can be represented using a poisson distribution. Also, since the source code metrics only take positive values for a given software module, we chose log-normal as the distribution for the priors of the source code metrics.  
 
 ```
-bugs <- possion(lamda)
-rfc <- log-normal(mu, sigma)
-npm <- log-normal(mu, sigma)
-cbo <- log-normal(mu, sigma)
-lcom3 <- log-normal(mu, sigma)
+bugs ~ possion(lamda)
+rfc ~ log-normal(mu, sigma)
+npm ~ log-normal(mu, sigma)
+cbo ~ log-normal(mu, sigma)
+lcom3 ~ log-normal(mu, sigma)
 ```
 
 ### Load and clean data  
