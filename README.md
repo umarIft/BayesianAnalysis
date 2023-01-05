@@ -155,6 +155,7 @@ m7<- ulam(
 )
 precis(m7,depth=2)
 ```
+### Posterior results
 The precis of the model is as follows, along with plot of the precis values
 
 ```
