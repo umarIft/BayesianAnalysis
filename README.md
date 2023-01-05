@@ -165,7 +165,10 @@ Enter the precis summary
 Lets plot the priors of the ULAM function.
 
 Also the traceoplot of the model is depicted below. It shows that the values explored by the ULAM are in a narrow range.
-
+```
+#observe the trankplot for the model
+trankplot(m7)
+```
 
 The counterfactual plot of the model is as follows. This shows that while the model has picked up the general trend of the data, it only loosely fits the data. Based on the model, we can say that the source code metrics can be used to identify the likelihood of bugs in a software.
 
