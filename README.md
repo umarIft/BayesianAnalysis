@@ -17,14 +17,14 @@ In order to avoid issues of multicollinearity in our model, we only select one s
 
 | Internal attribute | Extracted metrics             |
 |--------------------|-------------------------------|
-| Complexity         | WMC, RFC, AMC, MAX-CC, AVG-CC | 
-| Coupling           | CBO, CA, CE, IC               |
-| Cohesion           | LCOM, LCOM3, CAM, CBM         |
-| Size               | NPM, LOC,                     |
+| Complexity         | WMC, **RFC**, AMC, MAX-CC, AVG-CC | 
+| Coupling           | **CBO**, CA, CE, IC               |
+| Cohesion           | LCOM, **LCOM3**, CAM, CBM         |
+| Size               | **NPM**, LOC,                     |
 | Abstraction        | DAM, MOA, MFA                 |
 | Inheritance        | DIT, NOC                      |
 
-Later, we also discuss our choice of selecting a source code metric that corresponds to the internal attributes of interest. The model created select a single source code metric for each internal attribute. Based on a previous study [2], that classifies the relationship between different source code metrics and software quality, we select the following combination of source code metrics to describe our model are provided in the table below.
+The model created select a single source code metric for each internal attribute. Based on a previous study [2], that classified the relationship between different source code metrics and software quality based on the strength of the relation, we selected a combination of source code metrics (highlighted in the above table in bold) to describe our model.
 
 ## Selecting priors
 Since software bugs can take on positive values and the upper bound of the present software bugs in a module is unknown, We assume counting of software bugs can be represented using a poisson distribution. Also, since the source code metrics only take positive values for a given software module, we chose log-normal as the distribution for the priors of the source code metrics.  
