@@ -137,6 +137,26 @@ for ( i in 1:N ) curve( a + b[i]*x + c[i]*x + d[i]*x + e[i]*x , add=TRUE , col=g
 <p align="center">
   <img src="Images/simluated02.png" width=25% height=25% title="Improved simluated priors">
 </p>
+With these priors, we can move to implementing our model using the ULAM function.
+
+### Model description
+The following model is designed using the priors shown in the previous section.
+
+```
+m7<- ulam(
+  alist(bugs ~ dpois(mu),
+        mu <- a[p] + b*rfc + c*npm  + d*cbo + e*lcom3,
+        a[p] ~ dlnorm(1,0.2),
+        b ~ dlnorm(3,0.2),
+        c ~ dlnorm(5,0.2),
+        d ~ dlnorm(2,0.2),
+        e ~ dlnorm(1,0.2)
+        ),data=dd, chains=4, log_lik=TRUE
+)
+precis(m7,depth=2)
+```
+
+
 
 
 ## References
