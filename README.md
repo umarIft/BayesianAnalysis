@@ -86,10 +86,20 @@ str(dd)
 ```
 ## Selecting reasonable priors
 
-Next, we incrementatlly reduced the standard deviation that leads to **m1** model. Extracting and plotting the priors from **m1** gives the following output, which is in a much narrower range and can be used for the approximation. The same priors were then selected for the all the models.
+Next, we start with very broad priors for our predictor variables, i.e, rfc, npm, cbo, lcom3 and project id. Our initial guess is based on our understanding of what average values we expect for these predictors to take. 
 
+```
+a <- rlnorm(1e4, 4, 10)
+mean(a)
+[1] 3.911037e+14
+```
+Based on a general estimate that source code metrics usually do not have such having values, we try a lower value for both mean and standard deviation, which looks a bit reasonable.
 
-
+```
+a<- rlnorm(1e4, 2, 1)
+mean(a)
+[1] 12.2985
+```
 
 
 ## References
