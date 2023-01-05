@@ -36,6 +36,11 @@ The model created select a single source code metric for each internal attribute
 ## Selecting priors
 Since software bugs can take on positive values and the upper bound of the present software bugs in a module is unknown, We assume counting of software bugs can be represented using a poisson distribution. Also, since the source code metrics only take positive values for a given software module, we chose log-normal as the distribution for the priors of the source code metrics.  
 
+```
+This is a code section
+```
+
+
 After extracting data from the stored file, we remove any rows with incomplete data and then we standardised all the source code metrics. Next, we set out to find reasonable priors for our first model. In **m1draft**, we chose broad priors and then plot the priors to observe their behaviour. The priors for **m1draft** are show below. (The attached R code can be used to reproduce all the figures shown.)   
 
 
