@@ -136,6 +136,10 @@ plot( NULL , xlim=c(-2,2) , ylim=c(0,100) )
 for ( i in 1:N ) curve( a + b[i]*x + c[i]*x + d[i]*x + e[i]*x , add=TRUE , col=grau() )
 ```
 
+<p align="center">
+  <img src="Images/simulated02.png" width=25% height=25% title="Improved simluated priors">
+</p>
+
 
 ## References
 [1] B. M. Goel and P. K. Bhatia, ‘An Overview of Various Object Oriented Metrics’, International Journal of Information Technology, vol. 2, no. 1, p. 11.
