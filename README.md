@@ -9,7 +9,7 @@ Internal attributes of software are often measured using object oriented source 
 The directed acyclic graph, DAG, is depicted in the following figure. According to our understanding of static source code measurement, internal attributes do not influence each other. This may be better illustrated with an example. A piece of code which may be highly complex but has low coupling with other pieces of code. Also, small lenght of source code can also be complex depending on the kind of functionality implemented while very long length of source code may contain less complexity. The bugs introduced due to carelessness or lack of knowledge of the developer are not considered and is an unobserved variable in our analysis.     
 
 <p align="center">
-  <img src="Images/DAGv1.png" width=40% height=40% title="DAG: internal attributes software bugs">
+  <img src="Images/DAG02.png" width=40% height=40% title="DAG: internal attributes software bugs">
 </p>
 
 ### Selecting source code metrics
