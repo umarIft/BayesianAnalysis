@@ -26,9 +26,9 @@ The model created selects a single source code metric for each internal attribut
 
 | Source code metric | Description             |
 |--------------------|-------------------------|
-| RFC                | The response for a class is the count of the set of all methods that can                          |   
-| CBO                |                         |
-| LCOM3              |                         | 
+| RFC                | The response for a class is the count of the set of all methods that can be invoked in response to a message to an object of the class of by some method in the class                         |   
+| CBO                | The metric is a count of the number of other classes to which the currenct class is coupled, via non-inheritance-related couples. Two classes are coupled when the methods of one class use methods or attributes of another class.                        |
+| LCOM3              | A variant of LCOM, which is defined as the cohesion of a class is characterized by how closely the local methods are related to the local attributes.                        | 
 | NPM                |                         | 
 
 ### Selecting probability distribution
