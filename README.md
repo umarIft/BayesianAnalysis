@@ -32,7 +32,7 @@ The model created selects a single source code metric for each internal attribut
 | NPM                | Number of public methods in a class  | 
 
 ### Selecting probability distribution
-Since software bugs can take on positive values and the upper bound of the present software bugs in a module is unknown, we assume counting of software bugs can be represented using a poisson distribution. Also, since the source code metrics only take positive values for a given software module, we chose log-normal as the distribution for the priors of the source code metrics.  
+Since software bugs can take on positive values and the upper bound of the present software bugs in a module is unknown, we assume counting of software bugs can be represented using a poisson distribution. Another good option can be for gamma-poisson distribution. Though, as the difference between mean and variance of the outcome variable (bugs in our case) is not huge, we can stick with poisson. Also, since the source code metrics only take positive values for a given software module, we chose log-normal as the distribution for the priors of the source code metrics.  
 
 ```
 bugs ~ possion(lamda)
