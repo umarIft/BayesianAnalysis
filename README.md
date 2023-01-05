@@ -101,7 +101,9 @@ mean(a)
 [1] 12.2985
 curve(dlnorm(x,2,1), from = -100, to=100, n=200)
 ```
-
+<p align="center">
+  <img src="Images/dnorm01.png" width=40% height=40% title="log-normal distribution with mean=2, standard dev=1">
+</p>
 
 ## References
 [1] B. M. Goel and P. K. Bhatia, ‘An Overview of Various Object Oriented Metrics’, International Journal of Information Technology, vol. 2, no. 1, p. 11.
