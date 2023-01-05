@@ -22,7 +22,7 @@ In order to avoid issues of multicollinearity in our model, we only select one s
 | Cohesion           | LCOM, **LCOM3**, CAM, CBM         |
 | Size               | **NPM**, LOC,                     |
 
-The model created selects a single source code metric for each internal attribute. Based on a previous study [2], that classified source code metrics according to the strength of relationship between them and software reliability. Presence of software bugs effects reliability. Based on the reported strength of the relation, we selected a combination of source code metrics (highlighted in the above table in bold) to describe our model. Their descriptions are provided in the following table.
+The model created selects a single source code metric for each internal attribute. Based on a previous study [2], that classified source code metrics according to the strength of relationship between them and software reliability. Presence of software bugs effects reliability. Based on the reported strength of the relation, we selected a combination of source code metrics to describe our model. Their descriptions are provided in the following table.
 
 | Source code metric | Description             |
 |--------------------|-------------------------|
