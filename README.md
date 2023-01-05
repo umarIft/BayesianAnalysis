@@ -120,7 +120,7 @@ for ( i in 1:N ) curve( a + b[i]*x + c[i]*x + d[i]*x + e[i]*x , add=TRUE , col=g
   <img src="Images/simulated01.png" width=25% height=25% title="simluated priors with mean=2, standard dev=1">
 </p>
 
-This can be improved upon further but experimenting with the standard deviation and mean. We settled for the following.
+This can be improved upon further but experimenting with the standard deviation and mean. We settled for the following. The different choices of mean for each predictor is based on the assumption that the means of the source code metrics will be different and usually size metrics have larger values and thus a larger mean.
 
 ```
 set.seed(10)
