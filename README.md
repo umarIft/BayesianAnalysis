@@ -122,6 +122,20 @@ for ( i in 1:N ) curve( a + b[i]*x + c[i]*x + d[i]*x + e[i]*x , add=TRUE , col=g
   <img src="Images/simulated01.png" width=25% height=25% title="simluated priors with mean=2, standard dev=1">
 </p>
 
+This can be improved upon further but experimenting with the standard deviation and mean. We settled for the following.
+
+```
+set.seed(10)
+N <- 100
+a <- rlnorm( N , 1 , 0.2 )
+b <- rlnorm( N , 3 , 0.2 )
+c <- rlnorm( N , 5 , 0.2 )
+d <- rlnorm( N , 2 , 0.2 )
+e <- rlnorm( N , 1 , 0.2 )
+plot( NULL , xlim=c(-2,2) , ylim=c(0,100) )
+for ( i in 1:N ) curve( a + b[i]*x + c[i]*x + d[i]*x + e[i]*x , add=TRUE , col=grau() )
+```
+
 
 ## References
 [1] B. M. Goel and P. K. Bhatia, ‘An Overview of Various Object Oriented Metrics’, International Journal of Information Technology, vol. 2, no. 1, p. 11.
