@@ -24,21 +24,17 @@ In order to avoid issues of multicollinearity in our model, we only select one s
 | Abstraction        | DAM, MOA, MFA                 |
 | Inheritance        | DIT, NOC                      |
 
-The model created select a single source code metric for each internal attribute. Based on a previous study [2], that classified the relationship between different source code metrics and software quality based on the strength of the relation, we selected a combination of source code metrics (highlighted in the above table in bold) to describe our model.
+The model created select a single source code metric for each internal attribute. Based on a previous study [2], that classified the relationship between different source code metrics and software quality based on the strength of the relation, we selected a combination of source code metrics (highlighted in the above table in bold) to describe our model. Their descriptions are provided in the following table.
+
+| Source code metric | Description             |
+|--------------------|-------------------------|
+| RFC                |                         |   
+| CBO                |                         |
+| LCOM3              |                         | 
+| NPM                |                         | 
 
 ## Selecting priors
 Since software bugs can take on positive values and the upper bound of the present software bugs in a module is unknown, We assume counting of software bugs can be represented using a poisson distribution. Also, since the source code metrics only take positive values for a given software module, we chose log-normal as the distribution for the priors of the source code metrics.  
-
-| Model Name | Source code metrics used       | Approximation method    | 
-|------------|--------------------------------|-------------------------|
-| m0draft    | WMC, LOC, LCOM3, CBO, DIT, DAM | Quadratic approximation |
-| m0         | WMC, LOC, LCOM3, CBO, DIT, DAM | Quadratic approximation |
-| m1         | AMC, NPM, CAM, CA, MOA, NOC    | Quadratic approximation |
-| m2         | AVGCC, LOC, CBM, CE, DIT, MOA  | Quadratic approximation | 
-| m3         | RFC, LOC, CBO, LCOM3           | Quadratic approximation |
-| m5         | WMC, CE, LCOM3, LOC            | Quadratic approximation |
-| m6         | RFC, LOC, CBO, LCOM3           | Hamiltonian Monte Carlo |
-| m7         | RFC, LOC, CBO, LCOM3           | Hamiltonian Monte Carlo |
 
 After extracting data from the stored file, we remove any rows with incomplete data and then we standardised all the source code metrics. Next, we set out to find reasonable priors for our first model. In **m1draft**, we chose broad priors and then plot the priors to observe their behaviour. The priors for **m1draft** are show below. (The attached R code can be used to reproduce all the figures shown.)   
 
