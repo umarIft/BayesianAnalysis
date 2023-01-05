@@ -29,7 +29,7 @@ The model created selects a single source code metric for each internal attribut
 | RFC                | The response for a class is the count of the set of all methods that can be invoked in response to a message to an object of the class of by some method in the class                         |   
 | CBO                | The metric is a count of the number of other classes to which the currenct class is coupled, via non-inheritance-related couples. Two classes are coupled when the methods of one class use methods or attributes of another class.                        |
 | LCOM3              | A variant of LCOM, which is defined as the cohesion of a class is characterized by how closely the local methods are related to the local attributes.                        | 
-| NPM                |                         | 
+| NPM                | Number of public methods in a class  | 
 
 ### Selecting probability distribution
 Since software bugs can take on positive values and the upper bound of the present software bugs in a module is unknown, We assume counting of software bugs can be represented using a poisson distribution. Also, since the source code metrics only take positive values for a given software module, we chose log-normal as the distribution for the priors of the source code metrics.  
