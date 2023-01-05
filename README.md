@@ -105,5 +105,20 @@ curve(dlnorm(x,2,1), from = -100, to=100, n=200)
   <img src="Images/dnorm01.png" width=20% height=20% title="log-normal distribution with mean=2, standard dev=1">
 </p>
 
+In order to see what our choice of prior looks like when we plot them together for all our predictor variable, we choose 100 samples from log-normal distribution and plot them together.
+
+```
+set.seed(10)
+N <- 100
+a <- rlnorm( N , 2 , 1 )
+b <- rlnorm( N , 2 , 1 )
+c <- rlnorm( N , 2 , 1 )
+d <- rlnorm( N , 2 , 1 )
+e <- rlnorm( N , 2 , 1 )
+plot( NULL , xlim=c(-2,2) , ylim=c(0,100) )
+for ( i in 1:N ) curve( a + b[i]*x + c[i]*x + d[i]*x + e[i]*x , add=TRUE , col=grau() )
+```
+
+
 ## References
 [1] B. M. Goel and P. K. Bhatia, ‘An Overview of Various Object Oriented Metrics’, International Journal of Information Technology, vol. 2, no. 1, p. 11.
