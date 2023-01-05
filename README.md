@@ -137,7 +137,7 @@ for ( i in 1:N ) curve( a + b[i]*x + c[i]*x + d[i]*x + e[i]*x , add=TRUE , col=g
 ```
 
 <p align="center">
-  <img src="Images/simulated02.png" width=25% height=25% title="Improved simluated priors">
+  <img src="Images/simluated02.png" width=25% height=25% title="Improved simluated priors">
 </p>
 
 
