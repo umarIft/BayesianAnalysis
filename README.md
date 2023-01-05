@@ -93,12 +93,13 @@ a <- rlnorm(1e4, 4, 10)
 mean(a)
 [1] 3.911037e+14
 ```
-Based on a general estimate that source code metrics usually do not have such having values, we try a lower value for both mean and standard deviation, which looks a bit reasonable.
+Based on the assumption that source code metrics usually do not have such high mean values, we try a lower value for both mean and standard deviation, which looks a bit reasonable. We also plot these priors to see what they look like.
 
 ```
 a<- rlnorm(1e4, 2, 1)
 mean(a)
 [1] 12.2985
+curve(dlnorm(x,2,1), from = -100, to=100, n=200)
 ```
 
 
