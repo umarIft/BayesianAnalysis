@@ -43,7 +43,7 @@ lcom3 ~ log-normal(mu, sigma)
 ```
 
 ### Load and clean data  
-After extracting data from the stored file, we separate the variables of interest in a separate data frame. We also remove any rows with incomplete data using **complete.cases** command. We chose note to standardise the data for the source code metrics. The reason for this choice is that zero value for any source code metric is in itself meaningful.   
+After extracting data from the stored file, we separate the variables of interest in a separate data frame. We also remove any rows with incomplete data using **complete.cases** command. We chose not to standardise the data for the source code metrics. The reason for this choice is that zero value for any source code metric is in itself meaningful.   
 
 ```
 #read data from file
