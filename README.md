@@ -156,7 +156,7 @@ m7<- ulam(
 precis(m7,depth=2)
 ```
 ### Posterior results
-The precis of the model is as follows, along with plot of the precis values
+The precis of the model is as follows, along with plot of the precis values. We note that the Rhat4 value has conveged to 1 and ULAM call has extracted many different samples as n_eff looks to be normal.
 
 ```
 Enter the precis summary
