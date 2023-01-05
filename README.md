@@ -45,7 +45,7 @@ lcom3 <- log-normal(mu, sigma)
 ```
 
 ## Load data  
-After extracting data from the stored file, we separate the variables of interest in a separate data frame. We also remove any rows with incomplete data using **complete.cases** command. and then we standardised all the source code metrics. Next, we set out to find reasonable priors for our first model. In **m1draft**, we chose broad priors and then plot the priors to observe their behaviour. The priors for **m1draft** are show below. (The attached R code can be used to reproduce all the figures shown.)   
+After extracting data from the stored file, we separate the variables of interest in a separate data frame. We also remove any rows with incomplete data using **complete.cases** command. We chose note to standardise the data for the source code metrics. The reason for this choice is that zero value for any source code metric is in itself meaningful.   
 
 ```
 #read data from file
@@ -72,7 +72,19 @@ bugs <- d$data.bug
 #form a clean dataframe to be used in the model
 dd <- data.frame(p, rfc, npm, cbo, lcom3, bugs)
 dd <- dd[complete.cases(dd),]
+
+
+#view the data frame to note the data types assigned 
+str(dd)
+'data.frame':	3737 obs. of  6 variables:
+ $ p    : Factor w/ 11 levels "1","2","3","4",..: 1 1 1 1 1 1 1 1 1 1 ...
+ $ rfc  : num  288 109 210 73 169 152 150 60 157 135 ...
+ $ npm  : num  103 20 28 10 35 13 24 8 27 40 ...
+ $ cbo  : num  365 12 31 13 51 24 25 6 25 39 ...
+ $ lcom3: num  0.975 0.892 0.877 0.82 0.849 ...
+ $ bugs : num  10 8 8 7 6 6 6 6 5 5 ...
 ```
+## Selecting reasonable priors
 
 Next, we incrementatlly reduced the standard deviation that leads to **m1** model. Extracting and plotting the priors from **m1** gives the following output, which is in a much narrower range and can be used for the approximation. The same priors were then selected for the all the models.
 
