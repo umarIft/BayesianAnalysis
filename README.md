@@ -82,7 +82,7 @@ str(dd)
  $ lcom3: num  0.975 0.892 0.877 0.82 0.849 ...
  $ bugs : num  10 8 8 7 6 6 6 6 5 5 ...
 ```
-## Selecting reasonable priors
+### Selecting reasonable priors
 
 Next, we start with very broad priors for our predictor variables, i.e, rfc, npm, cbo, lcom3 and project id. Our initial guess is based on our understanding of what average values we expect for these predictors to take. 
 
