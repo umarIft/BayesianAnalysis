@@ -60,12 +60,15 @@ d <- data.frame(data$wmc, data$dit, data$noc, data$cbo, data$rfc,
 #remove any rows with incomplete data
 d <- d[complete.cases(d),]
 
+#load project id as a categorical variable
 p <- as.factor(d$data.projectcode)
+
 rfc <- d$data.rfc
 npm <- d$data.npm
 cbo <- d$data.cbo
 lcom3 <- d$data.lcom3
 bugs <- d$data.bug
+
 #form a clean dataframe to be used in the model
 dd <- data.frame(p, rfc, npm, cbo, lcom3, bugs)
 dd <- dd[complete.cases(dd),]
