@@ -155,7 +155,18 @@ m7<- ulam(
 )
 precis(m7,depth=2)
 ```
+The precis of the model is as follows, along with plot of the precis values
 
+```
+Enter the precis summary
+```
+
+Lets plot the priors of the ULAM function.
+
+
+
+
+The counterfactual plot of the model is as follows. This shows that while the model has picked up the general trend of the data, it only loosely fits the data. Based on the model, we can say that the source code metrics can be used to identify the likelihood of bugs in a software.
 
 
 
