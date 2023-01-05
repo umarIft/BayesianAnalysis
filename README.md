@@ -137,7 +137,7 @@ for ( i in 1:N ) curve( a + b[i]*x + c[i]*x + d[i]*x + e[i]*x , add=TRUE , col=g
 <p align="center">
   <img src="Images/simluated02.png" width=25% height=25% title="Improved simluated priors">
 </p>
-With these priors, we can move to implementing our model using the ULAM function.
+As these priors are in a narrow range , we can move to implementing our model using the ULAM function.
 
 ### Model description
 The following model is designed using the priors shown in the previous section.
