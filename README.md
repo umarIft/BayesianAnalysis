@@ -179,7 +179,17 @@ e     0.01 0.00 0.01  0.01  2548     1
 ```
 
 Lets plot the priors of the ULAM function.
-
+```
+# prior plot
+prior<-extract.prior(m7)
+xseq<-c(-2,2)
+mu<- link(m7,post=prior,data=list(rfc=xseq, npm=xseq, cbo=xseq, lcom3=xseq))
+plot(NULL, xlim=xseq,ylim=xseq)
+for(i in 1:50) lines(xseq, mu[i,], col=col.alpha("blue",0.3))
+```
+<p align="center">
+  <img src="Images/prior.png" width=75% height=25% title="trankplot for model m7">
+</p>
 Also the traceoplot of the model is depicted below. It shows that the values explored by the ULAM are in a narrow range.
 ```
 #observe the trankplot for the model
@@ -190,8 +200,16 @@ trankplot(m7)
 </p>
 
 The counterfactual plot of the model is as follows. This shows that while the model has picked up the general trend of the data, it only loosely fits the data. Based on the model, we can say that the source code metrics can be used to identify the likelihood of bugs in a software.
-
-
+```
+# counter factual plot
+xseq <- seq (from=min(dd$rfc)-0.15, to=max(dd$rfc)+0.15, length.out=50)
+mu<-link(m7, data=list(rfc=xseq, npm=xseq, cbo=xseq, lcom3=xseq))
+mu_mean <- apply(mu,2,mean)
+mu_PI <- apply(mu,2,PI)
+plot(bugs~rfc,data=dd)
+lines(xseq, mu_mean, lwd=2)
+shade(mu_PI,xseq)
+```
 
 ## References
 [1] B. M. Goel and P. K. Bhatia, ‘An Overview of Various Object Oriented Metrics’, International Journal of Information Technology, vol. 2, no. 1, p. 11.
