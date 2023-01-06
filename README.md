@@ -188,15 +188,17 @@ plot(NULL, xlim=xseq,ylim=xseq)
 for(i in 1:50) lines(xseq, mu[i,], col=col.alpha("blue",0.3))
 ```
 <p align="center">
-  <img src="Images/prior.png" width=75% height=25% title="trankplot for model m7">
+  <img src="Images/prior01.png" width=75% height=25% title="Extracted priors from model m7">
 </p>
 Also the traceoplot of the model is depicted below. It shows that the values explored by the ULAM are in a narrow range.
 ```
 #observe the trankplot for the model
 trankplot(m7)
+traceplot(m7)
 ```
+
 <p align="center">
-  <img src="Images/trace01.png" width=75% height=25% title="trankplot for model m7">
+  <img src="Images/trace01.png" width=75% height=25% title="trankplot and traceplot for model m7">
 </p>
 
 The counterfactual plot of the model is as follows. This shows that while the model has picked up the general trend of the data, it only loosely fits the data. Based on the model, we can say that the source code metrics can be used to identify the likelihood of bugs in a software.
