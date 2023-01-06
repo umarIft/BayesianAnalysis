@@ -219,4 +219,5 @@ shade(mu_PI,xseq)
 
 ## References
 [1] B. M. Goel and P. K. Bhatia, ‘An Overview of Various Object Oriented Metrics’, International Journal of Information Technology, vol. 2, no. 1, p. 11.
+
 [2] Iftikhar, U., Ali, N.B., Börstler, J., Usman, M.: A tertiary study on links between source code metrics and external quality attributes. Information and Software Technology -, (Submitted)
