@@ -159,7 +159,23 @@ precis(m7,depth=2)
 The precis of the model is as follows, along with plot of the precis values. We note that the Rhat4 value has conveged to 1 and ULAM call has extracted many different samples as n_eff looks to be normal.
 
 ```
-Enter the precis summary
+#precis summary
+      mean   sd 5.5% 94.5% n_eff Rhat4
+a[1]  0.19 0.02 0.16  0.22  2519     1
+a[2]  0.20 0.02 0.17  0.24  2647     1
+a[3]  0.30 0.03 0.25  0.35  2363     1
+a[4]  0.21 0.02 0.18  0.25  2543     1
+a[5]  0.14 0.01 0.12  0.16  2785     1
+a[6]  0.37 0.04 0.31  0.44  2425     1
+a[7]  0.74 0.06 0.65  0.84  2395     1
+a[8]  0.22 0.02 0.19  0.26  2435     1
+a[9]  0.76 0.08 0.63  0.89  2144     1
+a[10] 1.02 0.08 0.90  1.15  2070     1
+a[11] 0.24 0.03 0.20  0.28  2883     1
+b     0.01 0.00 0.00  0.01  2330     1
+c     0.02 0.00 0.01  0.02  2662     1
+d     0.01 0.00 0.01  0.01  2831     1
+e     0.01 0.00 0.01  0.01  2548     1
 ```
 
 Lets plot the priors of the ULAM function.
