@@ -201,7 +201,8 @@ traceplot(m7)
   <img src="Images/trace01.png" width=75% height=25% title="trankplot and traceplot for model m7">
 </p>
 
-The counterfactual plot of the model is as follows. This shows that while the model has picked up the general trend of the data, it only loosely fits the data. Based on the model, we can say that the source code metrics can be used to identify the likelihood of bugs in a software.
+The counterfactual plot of the model is as follows. This shows that while the model has picked up the general trend of the data, it only loosely fits the data. One source code metric, LCOM3, seems not to be a good predictor of software bugs. Based on the model, we can say that the source code metrics can be used to identify the likelihood of bugs in a software.
+
 ```
 # counter factual plot
 xseq <- seq (from=min(dd$rfc)-0.15, to=max(dd$rfc)+0.15, length.out=50)
