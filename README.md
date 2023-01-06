@@ -9,7 +9,7 @@ Internal attributes of software are often measured using object oriented source 
 The directed acyclic graph, DAG, is depicted in the following figure. According to our understanding of static source code measurement, internal attributes do not influence each other. This may be better illustrated with an example. A piece of code which may be highly complex but has low coupling with other pieces of code. Also, small lenght of source code can also be complex depending on the kind of functionality implemented while very long length of source code may contain less complexity. The bugs introduced due to carelessness or lack of knowledge of the developer are not considered and is an unobserved variable in our analysis.     
 
 <p align="center">
-  <img src="Images/dag02.png" width=40% height=40% title="DAG: internal attributes software bugs">
+  <img src="Images/dag02.png" width=25% height=25% title="DAG: internal attributes software bugs">
 </p>
 
 ### Selecting source code metrics
@@ -188,7 +188,7 @@ plot(NULL, xlim=xseq,ylim=xseq)
 for(i in 1:50) lines(xseq, mu[i,], col=col.alpha("blue",0.3))
 ```
 <p align="center">
-  <img src="Images/priorulam01.png" width=75% height=25% title="Extracted priors from model m7">
+  <img src="Images/priorulam01.png" width=25% height=25% title="Extracted priors from model m7">
 </p>
 Also the traceoplot of the model is depicted below. It shows that the values explored by the ULAM are in a narrow range.
 ```
@@ -212,6 +212,9 @@ plot(bugs~rfc,data=dd)
 lines(xseq, mu_mean, lwd=2)
 shade(mu_PI,xseq)
 ```
+<p align="center">
+  <img src="Images/posterior01.png" width=25% height=25% title="Extracted priors from model m7">
+</p>
 
 ## References
 [1] B. M. Goel and P. K. Bhatia, ‘An Overview of Various Object Oriented Metrics’, International Journal of Information Technology, vol. 2, no. 1, p. 11.
