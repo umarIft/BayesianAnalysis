@@ -213,7 +213,7 @@ lines(xseq, mu_mean, lwd=2)
 shade(mu_PI,xseq)
 ```
 <p align="center">
-  <img src="Images/posterior01.png" width=75% height=50% title="Extracted priors from model m7">
+  <img src="Images/posterior01.png" width=90% height=75% title="Extracted priors from model m7">
 </p>
 
 ## References
