@@ -186,7 +186,7 @@ Also the traceoplot of the model is depicted below. It shows that the values exp
 trankplot(m7)
 ```
 <p align="center">
-  <img src="Images/trace01.png" width=50% height=25% title="trankplot for model m7">
+  <img src="Images/trace01.png" width=75% height=25% title="trankplot for model m7">
 </p>
 
 The counterfactual plot of the model is as follows. This shows that while the model has picked up the general trend of the data, it only loosely fits the data. Based on the model, we can say that the source code metrics can be used to identify the likelihood of bugs in a software.
