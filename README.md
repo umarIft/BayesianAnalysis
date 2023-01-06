@@ -188,7 +188,7 @@ plot(NULL, xlim=xseq,ylim=xseq)
 for(i in 1:50) lines(xseq, mu[i,], col=col.alpha("blue",0.3))
 ```
 <p align="center">
-  <img src="Images/prior01.png" width=75% height=25% title="Extracted priors from model m7">
+  <img src="Images/priorulam01.png" width=75% height=25% title="Extracted priors from model m7">
 </p>
 Also the traceoplot of the model is depicted below. It shows that the values explored by the ULAM are in a narrow range.
 ```
